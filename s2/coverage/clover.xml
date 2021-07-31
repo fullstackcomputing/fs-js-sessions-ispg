@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1626964355149" clover="3.2.0">
+  <project timestamp="1626964355149" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4" elements="22" coveredelements="22" complexity="0" loc="14" ncloc="14" packages="1" files="3" classes="3"/>
+    <file name="emailValidator.js" path="/Users/anand/Pedagogy/fs-js-sessions-ispg/s2/emailValidator.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="5" type="stmt"/>
+      <line num="3" count="5" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+    </file>
+    <file name="findNestedObjectValue.js" path="/Users/anand/Pedagogy/fs-js-sessions-ispg/s2/findNestedObjectValue.js">
+      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="2" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="7" type="stmt"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="3" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+    </file>
+    <file name="validator.js" path="/Users/anand/Pedagogy/fs-js-sessions-ispg/s2/validator.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="8" count="4" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
