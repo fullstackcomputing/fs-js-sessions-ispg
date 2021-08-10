@@ -32,3 +32,12 @@
 
 # S6 
 - middlewares
+
+## S7
+- setting up of machines 
+
+## S8
+- DB CRUD operations
+- global request error handling
+- controllers with service layer
+
