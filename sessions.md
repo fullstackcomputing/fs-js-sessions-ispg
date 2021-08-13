@@ -43,3 +43,9 @@
 - global request error handling
 - controllers with service layer
 
+# S10
+- filters
+- counts
+- sorting
+- pagination
+- field selection
