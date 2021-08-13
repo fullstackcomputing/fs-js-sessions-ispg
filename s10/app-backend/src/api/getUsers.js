@@ -19,6 +19,7 @@ async function getUsers(req, res, next) {
 
 }
 
+// high code complexity and has a high surface area for testing 
 function listActionsOld(query) {
   //filters
   // <url>?_filters={"name": "foo"}
@@ -43,6 +44,8 @@ function listActionsOld(query) {
   }
 }
 
+// reduced complexity and offloading functionality to smaller functions. 
+// Easy to test individual functionality.
 function listActions(query)  {
   return {
     // <url>?_filters={"name": "foo"}
