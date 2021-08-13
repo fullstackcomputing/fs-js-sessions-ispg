@@ -1,23 +1,18 @@
-import mongoose from 'mongoose';
+import service from '../service';
 
-async function updateUser(req, res) {
+async function updateUser(req, res, next) {
   try {
-    const UserModel = mongoose.model('User');
-    const user = await UserModel.findById(req.params.id).exec();
+    
+    const user = await service.getUser(req.params.id);   
     if(!user) {
       return res.status(404).send('User Not Fould');
     }
 
-    const { email, name } = req.body;
-    if(email) user.email = email;
-    if(name) user.name = name;
-    
-    await user.validate();
-    await user.save();
+    const updatedUser = await service.updateUser(user, req.body);
+    return res.json(updatedUser);
 
-    return res.json(user);
   } catch(err) {
-    return res.status(500).json(err);
+    next(err);
   }
 
 }

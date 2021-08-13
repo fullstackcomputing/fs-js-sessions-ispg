@@ -1,17 +1,15 @@
-import mongoose from 'mongoose';
-async function deleteUser(req, res) {
+import service from '../service';
+
+async function deleteUser(req, res, next) {
   try {
-    const UserModel = mongoose.model('User');
-    const user = await UserModel.findById(req.params.id).exec();
+    const user = await service.getUser(req.params.id);
     if(!user) {
       return res.status(404).send('User Not Fould');
     }
-
-    await user.remove();
-    
-    return res.json(user);
+    const deletedUser = await service.deleteUser(user);
+    return res.json(deletedUser);
   } catch(err) {
-    return res.status(500).json(err);
+    next(err);
   }
 }
 

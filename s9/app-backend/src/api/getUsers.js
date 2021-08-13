@@ -1,12 +1,11 @@
-import mongoose from 'mongoose';
+import service from '../service';
 
-async function getUsers(req, res) {
+async function getUsers(req, res, next) {
   try {
-    const UserModel = mongoose.model('User');
-    const users = await UserModel.find({}).exec();
+    const users = await service.getUsers();
     return res.json(users);
   } catch(err) {
-    return res.status(500).json(err);
+    next(err);
   }
 
 }
