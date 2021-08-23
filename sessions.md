@@ -49,3 +49,12 @@
 - sorting
 - pagination
 - field selection
+
+# S11
+- user signup and login with JWT tokens
+- access control with middleware
+
+# S12
+- grouping routes
+- extracting JWT tokens, verifying and decoding embedded data 
+- assignment: create middleware to control acess to routes
