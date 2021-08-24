@@ -58,3 +58,8 @@
 - grouping routes
 - extracting JWT tokens, verifying and decoding embedded data 
 - assignment: create middleware to control acess to routes
+
+# S13
+- `TASK:` code middlewares: isRole, isRoleAny, isRoleAll
+- `TASK:` code middleWare: catchErrors
+- `TASK:` design a generic CRUD api/services interface
